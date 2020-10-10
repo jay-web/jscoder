@@ -20,7 +20,7 @@ const CanvasBox = (props) => {
         gl={{ alpha: false }} 
         camera={{ position: [-1, 1, 2.5], 
         fov: 50 }}>
-    <color attach="background" args={['lightblue']} />
+    <color attach="background" args={['teal-500']} />
     <hemisphereLight intensity={0.35} />
     <spotLight 
       position={[5, 5, 5]} angle={0.3} penumbra={1} intensity={2} castShadow shadow-mapSize-width={256} shadow-mapSize-height={256} />
