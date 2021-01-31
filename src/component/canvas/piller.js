@@ -4,7 +4,7 @@ import React, { useMemo } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
 import { Physics, usePlane, useBox } from 'use-cannon'
 import niceColors from 'nice-color-palettes'
-import './styles.css'
+// import './styles.css'
 
 export function Plane(props) {
   const [ref] = usePlane(() => ({ mass: 0, ...props }))

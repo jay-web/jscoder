@@ -1,6 +1,8 @@
 import React from "react";
 import CanvasBox from "../canvas/canvas";
+import {Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
+import "./homepage.style.css";
 
 class Homepage extends React.Component {
   render() {
@@ -11,9 +13,8 @@ class Homepage extends React.Component {
           <span className="title">Javascript Developer</span>
           <span className="name">Jay Sharma</span>
 
-          <Link to="/projects" 
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-8 mt-8 rounded-full">
-            Explore Projects
+          <Link to="/projects" className="exploreButton">
+           Explore Projects
           </Link>
         </div>
       </div>
