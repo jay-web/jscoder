@@ -20,9 +20,9 @@ const useStyles = makeStyles({
   root: {
     marginBottom: "2rem",
     borderRadius: "45px",
-    transition: "all 700ms ease-in-out",
+    transition: "all 800ms ease-in-out",
     "&:hover": {
-      // background: "#75a7ff"
+      // transform: "scaleX(1.0134)"
     },
   },
 });
@@ -33,7 +33,13 @@ const Projectpage = () => {
     return projects.map((pro) => {
       return (
         <Paper elevation={1} key={pro.id} className={classes.root}>
-          <Grid item container justify="space-around" alignContent="center" direction={pro.id % 2 === 0 ? "row-reverse" : "row"}>
+          <Grid
+            item
+            container
+            justify="space-around"
+            alignContent="center"
+            direction={pro.id % 2 === 0 ? "row-reverse" : "row"}
+          >
             <Grid item xs={10} md={5} className={classes.box}>
               <ContentBox {...pro} />
             </Grid>
@@ -56,7 +62,7 @@ const Projectpage = () => {
 
         {/* Center box */}
 
-        <Grid xs={10}  item container>
+        <Grid xs={10} item container>
           {renderProjects()}
         </Grid>
 

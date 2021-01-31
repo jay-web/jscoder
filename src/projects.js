@@ -58,6 +58,21 @@ const projects = [
             postmanURL: ""
         },
         showAPI: false
+    },
+    {
+        id: "5",
+        name: "Maze Canvas",
+        title: "Javascript Canvas Game",
+        technology: "Matter.js, HTML, CSS, Javascript",
+        imageURL: "./maze.gif",
+        summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        button: {
+            text: "CHECK LIVE",
+            postmanText: "API WITH POSTMAN",
+            liveURL: "https://jay-web.github.io/maze-canvas/",
+            postmanURL: ""
+        },
+        showAPI: false
     }
 ]
 

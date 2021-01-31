@@ -150,7 +150,7 @@ function ContentBox(props) {
               <Grid item container justify="space-between">
                 <Grid item style={{ marginBottom: ".5rem"}}>
                   <Button className={classes.liveButton} >
-                    <a href={button.liveURL} className={classes.buttonAnchor}>Go Live</a>
+                    <a href={button.liveURL} target="blank" className={classes.buttonAnchor}>Go Live</a>
                   </Button>
                 </Grid>
                 <Grid item>
