@@ -4,7 +4,7 @@ const projects = [
         name: "Holidays",
         title: "Full Stack Application",
         technology: "Nodejs, Express, MongoDB, PUG",
-        imageURL: "./jscoder/holiday.gif",
+        imageURL: "./holiday.gif",
         summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         button: {
             text: "CHECK LIVE",
@@ -19,7 +19,7 @@ const projects = [
         name: "Prism- The world of colors",
         title: "React Application",
         technology: "React JS",
-        imageURL: "./jscoder/prism.gif",
+        imageURL: "./prism.gif",
         summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         button: {
             text: "CHECK LIVE",
@@ -35,7 +35,7 @@ const projects = [
         name: "Tasks",
         title: "React Application",
         technology: "React JS",
-        imageURL: "./jscoder/tasks.png",
+        imageURL: "./tasks.png",
         summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         button: {
             text: "CHECK LIVE",
@@ -50,7 +50,7 @@ const projects = [
         name: "Bitcoin tracker",
         title: "Javascript Application",
         technology: "Javascript, HTML, CSS",
-        imageURL: "./jscoder/bitcoins.gif",
+        imageURL: "./bitcoins.gif",
         summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         button: {
             text: "CHECK LIVE",
@@ -65,7 +65,7 @@ const projects = [
         name: "Single Page Theme",
         title: "Bootstrap Application",
         technology: "Bootstrap Framework",
-        imageURL: "./jscoder/looplab.gif",
+        imageURL: "./looplab.gif",
         summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         button: {
             text: "CHECK LIVE",
@@ -80,7 +80,7 @@ const projects = [
         name: "Maze Canvas",
         title: "Javascript Canvas Game",
         technology: "Matter.js, HTML, CSS, Javascript",
-        imageURL: "./jscoder/maze.gif",
+        imageURL: "./maze.gif",
         summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         button: {
             text: "CHECK LIVE",
