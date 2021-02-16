@@ -18,7 +18,7 @@ const projects = [
         id: "2",
         name: "Prism- The world of colors",
         title: "React Application",
-        technology: "React JS",
+        technology: "React JS, Chroma-js, Material-UI",
         imageURL: "./prism.gif",
         summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
         button: {

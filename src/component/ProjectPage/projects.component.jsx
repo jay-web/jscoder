@@ -25,6 +25,8 @@ const useStyles = makeStyles({
     "&:hover": {
       // transform: "scaleX(1.0134)"
     },
+    fontFamily: 'Sansita Swashed, cursive'
+
   },
 });
 

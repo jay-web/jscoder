@@ -31,12 +31,10 @@ const useStyles = makeStyles((theme) => ({
 
 function ProjectCards(props) {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
+ 
   const [overlay, setOverlay] = React.useState(false);
   const { imageURL } = props;
-  const handleExpandClick = () => {
-    setOverlay(!overlay);
-  };
+ 
 
   return overlay ? (
     <div className={`overlay ${overlay && "show"}`} />

@@ -25,24 +25,28 @@ const useStyles = makeStyles((theme) => ({
     background: "none",
     borderRadius: "10px",
     color: "inherit",
-    fontFamily: 'Sansita Swashed, cursive'
- 
-  
-
+  },
+  pname:{
+    fontFamily: 'Sansita Swashed, cursive !important'
   },
 
   textBox: {
     marginBottom: `${theme.spacing(2)}px`,
     paddingLeft: ".1rem",
     fontSize: ".9rem",
-    color: "inherit"
+    color: "inherit",
+    
+    
+
   },
   techBox: {
       fontWeight: "800",
       marginBottom: `${theme.spacing(2)}px`,
       paddingLeft: ".1rem",
       fontSize: ".9rem",
-      color: "inherit"
+      color: "inherit",
+      fontFamily: 'Sansita Swashed, cursive !important'
+      
   },
   
   avatar: {
@@ -59,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
           color:"#000",
           backgroundColor: "#2979ff",
       },
+      
      
   },
   postmanButton:{
@@ -104,7 +109,7 @@ function ContentBox(props) {
             {/* <MoreVertIcon /> */}
           </IconButton>
         }
-        title={ <Typography variant="h6">
+        title={ <Typography variant="h6" className={classes.pname}>
         {name}
          </Typography>}
         subheader={

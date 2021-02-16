@@ -47,6 +47,7 @@ function App() {
         >
           <Route exact path="/jscoder" component={Homepage} />
           <Route exact path="/jscoder/projects" component={Projectpage} />
+          <Route component={Projectpage} />
         </AnimatedSwitch>
       </DarkThemeMode>
       <CssBaseline />
