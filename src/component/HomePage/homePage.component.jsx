@@ -16,7 +16,7 @@ class Homepage extends React.Component {
           <span className="title">Javascript Developer</span>
           <span className="name">Jay Sharma</span>
 
-          <Link to="/projects" className="exploreButton">
+          <Link to="/jscoder/projects" className="exploreButton">
            Explore Projects
           </Link>
         </div>
