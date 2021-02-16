@@ -45,7 +45,7 @@ function App() {
           atActive={{ opacity: 1 }}
           className="switch-wrapper"
         >
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/jscoder" component={Homepage} />
           <Route exact path="/projects" component={Projectpage} />
         </AnimatedSwitch>
       </DarkThemeMode>
