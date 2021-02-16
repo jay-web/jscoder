@@ -10,7 +10,8 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     borderRadius: "5px",
     // marginBottom: "0px",
-    padding: "0px"
+    padding: "0px",
+    
     
   },
   textBox: {

@@ -13,6 +13,7 @@ import { CardBoxTheme } from "../theme/theme.component";
 const useStyles = makeStyles({
   content: {
     padding: "0px 10px",
+   
   },
   box: {
     margin: "2rem 0rem 2rem 0rem",

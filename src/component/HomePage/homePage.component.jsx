@@ -7,8 +7,11 @@ import "./homepage.style.css";
 class Homepage extends React.Component {
   render() {
     return (
-      <div>
+      <div className="homepage">
+        <span className="canvasbox">
         <CanvasBox />
+        </span>
+       
         <div className="titleBox">
           <span className="title">Javascript Developer</span>
           <span className="name">Jay Sharma</span>

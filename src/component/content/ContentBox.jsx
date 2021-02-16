@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: ".9rem",
     background: "none",
     borderRadius: "10px",
-    color: "inherit"
+    color: "inherit",
+    fontFamily: 'Sansita Swashed, cursive'
  
   
 

@@ -5,7 +5,7 @@
     transition: transform 0.6s ease-in-out;
     background-color: brown;
     overflow: hidden;
-    
+    font-Family: 'Sansita Swashed, cursive'
 }
 .overlay.show{
     opacity: 1;

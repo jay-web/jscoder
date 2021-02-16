@@ -4,9 +4,10 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Homepage from "./component/HomePage/homePage.component";
 import Projectpage from "./component/ProjectPage/projects.component";
-import {DarkThemeMode} from "./component/theme/theme.component";
+import { DarkThemeMode } from "./component/theme/theme.component";
 import { ThemeProvider } from "./contexts/theme.contexts";
 import { createMuiTheme, CssBaseline } from "@material-ui/core";
+import { AnimatedSwitch } from "react-router-transition";
 
 const theme = createMuiTheme({
   palette: {
@@ -21,34 +22,35 @@ const theme = createMuiTheme({
       dark: "#9f0000",
     },
   },
-  props:{
+  props: {
     MuiCardHproeader: {
       // Name of the rule
-      
-      title:{
-        color: 'white',
+
+      title: {
+        color: "white",
         fontSize: "2rem",
-      }
-        // Some CSS
-       
-      
+      },
+      // Some CSS
     },
-  }
- 
+  },
 });
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <DarkThemeMode>
-        <Switch>
+        <AnimatedSwitch
+          atEnter={{ opacity: 0 }}
+          atLeave={{ opacity: 0 }}
+          atActive={{ opacity: 1 }}
+          className="switch-wrapper"
+        >
           <Route exact path="/" component={Homepage} />
           <Route exact path="/projects" component={Projectpage} />
-        </Switch>
+        </AnimatedSwitch>
       </DarkThemeMode>
       <CssBaseline />
     </ThemeProvider>
-    
   );
 }
 

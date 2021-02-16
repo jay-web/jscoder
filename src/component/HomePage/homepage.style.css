@@ -1,3 +1,7 @@
+.homepage{
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+}
 .exploreButton {
     background-color: #2979ff;
     text-decoration: none;
@@ -12,14 +16,17 @@
 }
 
 .titleBox {
-    position: absolute;
+    /* position: absolute;
     top: 30%;
     left : 60%;
-    transform: translate(-20%);
+    transform: translate(-20%); */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     align-items: center;
+
+    
     
   }
 
@@ -33,3 +40,18 @@
     font-weight: 800;
     
   }
+
+
+@media screen and (max-width: 700px){
+  .homepage{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleBox{
+    height: 100vh;
+  }
+  .canvasbox{
+    display: none;
+  }
+}
