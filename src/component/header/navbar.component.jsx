@@ -33,7 +33,7 @@ class Navbar extends React.Component {
             </IconButton> */}
             
             <Typography className={classes.title} variant="h5">
-             <Link to="/" className={classes.link}>jsCoder</Link>
+             <Link to="/jscoder" className={classes.link}>jsCoder</Link>
             </Typography>
             <Typography className={classes.modeText}>
               {isDarkMode ? "Moon Mode" : "Sun Mode"}
