@@ -46,7 +46,7 @@ function App() {
           atActive={{ opacity: 1 }}
           className="switch-wrapper"
         >
-          <Route exact path="/jscoder" component={Homepage} />
+          <Route exact path="/" component={Homepage} />
           <Route exact path="/jscoder/projects" component={Projectpage} />
           <Route exact path="/jscoder/aboutme" component={Aboutme} />
           <Route component={Projectpage} />
