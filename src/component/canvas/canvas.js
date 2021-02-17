@@ -18,7 +18,7 @@ const CanvasBox = (props) => {
         shadowMap 
         colorManagement 
         gl={{ alpha: false }} 
-        camera={{ position: [-3.5, 1, 1], 
+        camera={{ position: [-4.5, 2, 1], 
         fov: 50 }}>
     <color attach="background" args={['teal-500']} />
     <hemisphereLight intensity={0.35} />

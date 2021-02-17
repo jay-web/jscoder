@@ -5,7 +5,7 @@ const projects = [
         title: "Full Stack Application",
         technology: "Nodejs, Express, MongoDB, PUG",
         imageURL: "./holiday.gif",
-        summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        summary: "This is javascript full stack server side rendered application. Holidays is tour & travel company which",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",

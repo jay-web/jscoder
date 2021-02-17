@@ -6,7 +6,7 @@ const NavStyles = (theme, palette) => {
     {
     root: {
       flexGrow: 1,
-      backgroundColor: "#2979ff",
+      backgroundColor: "#064cd5",
      
     
     },
@@ -33,6 +33,10 @@ const NavStyles = (theme, palette) => {
     },
     modeText: {
       fontFamily: 'Sansita Swashed, cursive'
+    },
+    aboutme:{
+      marginBottom: '.3rem',
+      marginRight: '1rem'
     }
     
 

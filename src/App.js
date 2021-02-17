@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Homepage from "./component/HomePage/homePage.component";
 import Projectpage from "./component/ProjectPage/projects.component";
+import Aboutme from "./component/Aboutme/Aboutme.component";
 import { DarkThemeMode } from "./component/theme/theme.component";
 import { ThemeProvider } from "./contexts/theme.contexts";
 import { createMuiTheme, CssBaseline } from "@material-ui/core";
@@ -47,6 +48,7 @@ function App() {
         >
           <Route exact path="/jscoder" component={Homepage} />
           <Route exact path="/jscoder/projects" component={Projectpage} />
+          <Route exact path="/jscoder/aboutme" component={Aboutme} />
           <Route component={Projectpage} />
         </AnimatedSwitch>
       </DarkThemeMode>

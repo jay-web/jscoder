@@ -35,6 +35,9 @@ class Navbar extends React.Component {
             <Typography className={classes.title} variant="h5">
              <Link to="/jscoder" className={classes.link}>jsCoder</Link>
             </Typography>
+            <Typography className= {`${classes.modeText} ${classes.aboutme}`}>
+             <Link to="/jscoder/aboutme" className={classes.link}>About me</Link>
+            </Typography>
             <Typography className={classes.modeText}>
               {isDarkMode ? "Moon Mode" : "Sun Mode"}
             <Switch onChange={changeMode} color='secondary' />

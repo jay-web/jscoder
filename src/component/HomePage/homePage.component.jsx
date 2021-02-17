@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
+import {ThemeContext } from "../../contexts/theme.contexts";
 import CanvasBox from "../canvas/canvas";
 import {Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./homepage.style.css";
 
-class Homepage extends React.Component {
-  render() {
+const Homepage = () =>  {
+  const { isDarkMode } = useContext(ThemeContext);
+  const textColor = isDarkMode ? "#ffffff" : "rgb(19, 38, 101)"
     return (
       <div className="homepage">
         <span className="canvasbox">
@@ -13,8 +15,8 @@ class Homepage extends React.Component {
         </span>
        
         <div className="titleBox">
-          <span className="title">Javascript Developer</span>
-          <span className="name">Jay Sharma</span>
+          <span className="title" style={{ color: `${textColor}`}}>Javascript Developer</span>
+          <span className="name"  style={{ color: `${textColor}`}}>Jay Sharma</span>
 
           <Link to="/jscoder/projects" className="exploreButton">
            Explore Projects
@@ -22,7 +24,7 @@ class Homepage extends React.Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default Homepage;

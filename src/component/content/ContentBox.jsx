@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     
   },
   liveButton:{
-      backgroundColor: "#2979ff",
+      backgroundColor: "#064cd5",
       color: "#fff",
       marginRight: ".5rem",
       fontSize: ".9rem",
