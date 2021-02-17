@@ -71,14 +71,14 @@
   }
   .titleBox{
     height: 100vh;
-    margin-top: -26rem;
+    margin-top: -22rem;
     z-index: 2000;
   }
   .canvasbox{
-    /* display: none; */
-    margin-top: -10rem;
+    display: none;
+    /* margin-top: -10rem;
     margin-left: 3rem;
-    width: 100vw;
+    width: 100vw; */
     
   }
 }
