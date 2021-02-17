@@ -18,7 +18,7 @@ const Homepage = () =>  {
           <span className="title" style={{ color: `${textColor}`}}>Javascript Developer</span>
           <span className="name"  style={{ color: `${textColor}`}}>Jay Sharma</span>
 
-          <Link to="/jscoder/projects" className="exploreButton">
+          <Link to="/projects" className="exploreButton">
            Explore Projects
           </Link>
         </div>

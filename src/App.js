@@ -47,8 +47,8 @@ function App() {
           className="switch-wrapper"
         >
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/jscoder/projects" component={Projectpage} />
-          <Route exact path="/jscoder/aboutme" component={Aboutme} />
+          <Route exact path="/projects" component={Projectpage} />
+          <Route exact path="/aboutme" component={Aboutme} />
           <Route component={Projectpage} />
         </AnimatedSwitch>
       </DarkThemeMode>
