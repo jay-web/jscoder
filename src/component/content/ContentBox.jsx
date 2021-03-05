@@ -72,12 +72,28 @@ const useStyles = makeStyles((theme) => ({
       fontSize: ".9rem",
       "&:hover":{
         color:"#000",
-        backgroundColor: "#d81b60",
+        backgroundColor: "#ef4873",
     }
+  },
+  githubButton:{
+    backgroundColor: "#414849",
+   
+    fontSize: ".9rem",
+    "&:hover":{
+     
+      backgroundColor: "#000",
+  }
   },
   buttonAnchor: {
     textDecoration: "none",
     color: "white"
+  },
+  gitButtonAnchor:{
+    textDecoration: "none",
+    color: "#fff",
+    "&:hover":{
+      color: "#fff"
+    }
   }
   
 }));
@@ -86,7 +102,7 @@ function ContentBox(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
   const [overlay, setOverlay] = React.useState(false);
-  const { name, technology, summary, imageUrl, showAPI, title, button } = props;
+  const { name, technology, summary, imageUrl, showAPI, title, button, showCode } = props;
   const handleExpandClick = () => {
     setOverlay(!overlay);
   };
@@ -166,6 +182,14 @@ function ContentBox(props) {
                    </Button>
                  : null }
                 </Grid>
+                <Grid item>
+                { showCode ?
+                 <Button className={classes.githubButton} >
+                    <a href={button.githubURL} target="blank" className={classes.gitButtonAnchor}> Code on Github</a>
+                   </Button>
+                 : null }
+                </Grid>
+                
                 
               
               </Grid>

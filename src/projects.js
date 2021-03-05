@@ -10,9 +10,11 @@ const projects = [
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
             liveURL: "https://holiday-adventure.herokuapp.com/",
-            postmanURL: "https://documenter.getpostman.com/view/4087771/Tz5jdzYg"
+            postmanURL: "https://documenter.getpostman.com/view/4087771/Tz5jdzYg",
+            githubURL: "https://github.com/jay-web/holidays"
         },
-        showAPI: true
+        showAPI: true,
+        showCode: true
     },
     {
         id: "2",
@@ -20,14 +22,16 @@ const projects = [
         title: "React Application",
         technology: "React JS, Chroma-js, Material-UI",
         imageURL: "./prism.gif",
-        summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        summary: "Prism is reactjs based front end application. Chroma-js and Material-UI are also integrated to generate color palettes and application UI. User can use already generated color palettes or can generate new palette according to requirement.",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
             liveURL: "https://jay-web.github.io/prism/",
-            postmanURL: ""
+            postmanURL: "",
+            githubURL: "https://github.com/jay-web/prism"
         },
-        showAPI: false
+        showAPI: false,
+        showCode: true
     },
     
     {
@@ -43,7 +47,8 @@ const projects = [
             liveURL: "",
             postmanURL: ""
         },
-        showAPI: false
+        showAPI: false,
+        showCode: true
     },
     {
         id: "4",
@@ -58,7 +63,8 @@ const projects = [
             liveURL: "https://jay-web.github.io/Live-Bitcoin/",
             postmanURL: ""
         },
-        showAPI: false
+        showAPI: false,
+        showCode: true
     },
     {
         id: "5",
@@ -73,7 +79,8 @@ const projects = [
             liveURL: "https://jay-web.github.io/",
             postmanURL: ""
         },
-        showAPI: false
+        showAPI: false,
+        showCode: true
     },
     {
         id: "6",
@@ -88,7 +95,8 @@ const projects = [
             liveURL: "https://jay-web.github.io/maze-canvas/",
             postmanURL: ""
         },
-        showAPI: false
+        showAPI: false,
+        showCode: true
     }
 ]
 
