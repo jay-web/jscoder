@@ -161,7 +161,9 @@ function ContentBox(props) {
                 </Grid>
                 <Grid item>
                 { showAPI ?
-                 <Button className={classes.postmanButton}>Api with Postman</Button>
+                 <Button className={classes.postmanButton}>
+                    <a href={button.postmanURL} target="blank" className={classes.buttonAnchor}> Api with Postman</a>
+                   </Button>
                  : null }
                 </Grid>
                 
