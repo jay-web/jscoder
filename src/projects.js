@@ -5,12 +5,12 @@ const projects = [
         title: "Full Stack Application",
         technology: "Nodejs, Express, MongoDB, PUG",
         imageURL: "./holiday.gif",
-        summary: "This is javascript full stack server side rendered application. Holidays is tour & travel company which",
+        summary: "This is javascript full stack server side rendered application. ExpressJS, MongoDB, JWT based authentication, PUG and other node based libarary are implemented",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
             liveURL: "https://holiday-adventure.herokuapp.com/",
-            postmanURL: ""
+            postmanURL: "https://documenter.getpostman.com/view/4087771/Tz5jdzYg"
         },
         showAPI: true
     },
