@@ -4,7 +4,7 @@ const projects = [
         name: "Holidays",
         title: "Full Stack Application",
         technology: "Nodejs, Express, MongoDB, PUG",
-        imageURL: "./holiday.gif",
+        imageURL: "./holidays-2.gif",
         summary: "This is javascript full stack server side rendered application. ExpressJS, MongoDB, JWT based authentication, PUG and other node based libarary are implemented",
         button: {
             text: "CHECK LIVE",

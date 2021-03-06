@@ -18,7 +18,7 @@ export default  {
         backgroundColor: 'white',
        
         height: '80vh',
-        border: "solid 2px",
+        // border: "solid 2px",
         // borderColor: "#37474f"
         
     },
