@@ -19,7 +19,7 @@ export default  {
        
         height: '80vh',
         border: "solid 2px",
-        borderColor: "#37474f"
+        // borderColor: "#37474f"
         
     },
     innerText:{

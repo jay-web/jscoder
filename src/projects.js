@@ -62,7 +62,8 @@ const projects = [
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
             liveURL: "https://jay-web.github.io/Live-Bitcoin/",
-            postmanURL: ""
+            postmanURL: "",
+            githubURL: "https://github.com/jay-web/Live-Bitcoin"
         },
         showAPI: false,
         showCode: true
@@ -78,7 +79,8 @@ const projects = [
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
             liveURL: "https://jay-web.github.io/",
-            postmanURL: ""
+            postmanURL: "",
+            githubURL:"https://github.com/jay-web/jay-web.github.io"
         },
         showAPI: false,
         showCode: true
@@ -94,7 +96,8 @@ const projects = [
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
             liveURL: "https://jay-web.github.io/maze-canvas/",
-            postmanURL: ""
+            postmanURL: "",
+            githubURL: "https://github.com/jay-web/maze-canvas"
         },
         showAPI: false,
         showCode: true
