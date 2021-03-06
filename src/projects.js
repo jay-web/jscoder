@@ -40,12 +40,13 @@ const projects = [
         title: "React Application",
         technology: "React JS",
         imageURL: "./tasks.png",
-        summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        summary: "Task is the react based front end web application. New react features are implemented like react hooks (useState, useEffect, useContext etc..). User can create, edit or delete daily tasks as a todo list. ",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
-            liveURL: "",
-            postmanURL: ""
+            liveURL: "https://jay-web.github.io/taskmanager",
+            postmanURL: "",
+            githubURL: "https://github.com/jay-web/taskmanager"
         },
         showAPI: false,
         showCode: true
