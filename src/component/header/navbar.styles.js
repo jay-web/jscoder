@@ -16,6 +16,7 @@ const NavStyles = (theme, palette) => {
     },
     title: {
       flexGrow: 1,
+      letterSpacing: "2px",
       display: 'none',
       [theme.breakpoints.up('sm')]: {
         display: 'block',
@@ -25,14 +26,14 @@ const NavStyles = (theme, palette) => {
     link : {
       color: 'white',
       textDecoration: 'none',
-      fontFamily: 'Sansita Swashed, cursive'
+      fontFamily: 'Akaya Telivigala, cursive',
 
     },
     switchColor : {
       color: theme.palette.primary.main
     },
     modeText: {
-      fontFamily: 'Sansita Swashed, cursive'
+      fontFamily: 'Akaya Telivigala, cursive',
     },
     aboutme:{
       marginBottom: '.3rem',

@@ -2,13 +2,13 @@ export default  {
     root:{
         height: '80vh',
         marginTop: '0px',
-        fontFamily: 'Sansita Swashed, cursive'
+        fontFamily: 'Akaya Telivigala, cursive'
     },
     aboutme:{
         display: "grid",
         gridTemplateColumns: "1fr 1fr",
         justifyContent: "center",
-        color: "#064cd5"
+        // color: "#37474f"
     },
     content:{
         display: 'flex',
@@ -16,7 +16,7 @@ export default  {
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'white',
-       
+       color: "#37474f",
         height: '80vh',
         // border: "solid 2px",
         // borderColor: "#37474f"
@@ -24,6 +24,8 @@ export default  {
     },
     innerText:{
         padding: "2rem",
+        fontSize: "1.2rem",
+        marginLeft: "1rem"
         // color: '#064cd5',
        
     },
@@ -39,7 +41,19 @@ export default  {
     social:{
         textDecoration: 'none',
         marginRight: "1rem",
-        color: "#064cd5"
+        // color: "#064cd5",
+        // "&:hover":{
+        //     transform: "scale(1.2)",
+        //     transition: "all .2s ease-in-out"
+        // }
+    },
+    socialIcon:{
+       
+        "&:hover":{
+            transform: "scale(1.2)",
+           
+            transition: "all .2s ease-in-out"
+        }
     },
     contact:{
         display: "flex",

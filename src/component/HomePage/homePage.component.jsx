@@ -15,10 +15,10 @@ const Homepage = () =>  {
         </span>
        
         <div className="titleBox">
-          <span className="title" style={{ color: `${textColor}`}}>Javascript Developer</span>
-          <span className="name"  style={{ color: `${textColor}`}}>Jay Sharma</span>
+          <span className="title" style={{ color: `${textColor}`, fontFamily: 'Akaya Telivigala, cursive'}}>Javascript Developer</span>
+          <span className="name"  style={{ color: `${textColor}`, fontFamily: 'Akaya Telivigala, cursive'}}>Jay Sharma</span>
 
-          <Link to="/projects" className="exploreButton">
+          <Link to="/projects" className="exploreButton" style={{ fontFamily: 'Akaya Telivigala, cursive', fontSize: "1rem"}}>
            Explore Projects
           </Link>
         </div>

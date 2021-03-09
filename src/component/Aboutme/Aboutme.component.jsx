@@ -11,15 +11,19 @@ import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 const Aboutme = (props) => {
   const { classes } = props;
   const { isDarkMode } = useContext(ThemeContext);
-  const textColor = isDarkMode ? "#37474f" : "#064cd5";
+  const textColor = isDarkMode ? "#fff" : "#37474f";
+  const background = isDarkMode ? "#37474f" : "#fff";
+  const background2 = isDarkMode ? "#fff" : "#fff";
+
   return (
     <div className={classes.root}>
       <Navbar />
-      <div className={classes.aboutme}>
-        <Paper className={classes.content} elevation={0}>
+      <div className={classes.aboutme} >
+        <Paper className={classes.content} elevation={0} style={{background: `${background}`}} >
           <Paper
             className={classes.innerText}
-            style={{ color: `${textColor}` }}
+            elevation={3}
+            style={{ color: `${textColor}` ,background: `${background}`}}
           >
             <span>About & Contact</span>
             <h1>Jay Sharma</h1>
@@ -33,7 +37,7 @@ const Aboutme = (props) => {
               backend nodejs server side rendered web applications.
             </p>
             <br />
-            <p>Feel free to connect me on +919958345009</p>
+            <p>Feel free to connect me on <span style={{ fontFamily: "normal", fontWeight: "bold"}}>+919958345009</span></p>
             <div className={classes.contact}>
               <span className="socialIcons">
                 <a
@@ -41,7 +45,7 @@ const Aboutme = (props) => {
                   target="blank"
                   className={classes.social}
                 >
-                  <LinkedInIcon />
+                  <LinkedInIcon  className={classes.socialIcon} fontSize="large" style={{ color: `${isDarkMode ? "white" : "black"}` }}/>
                 </a>
 
                 <a
@@ -49,7 +53,7 @@ const Aboutme = (props) => {
                   target="blank"
                   className={classes.social}
                 >
-                  <GitHubIcon />
+                  <GitHubIcon className={classes.socialIcon} fontSize="large" style={{ color: `${isDarkMode ? "white" : "black"}` }}/>
                 </a>
 
                 <a
@@ -57,7 +61,7 @@ const Aboutme = (props) => {
                   target="blank"
                   className={classes.social}
                 >
-                  <TwitterIcon />
+                  <TwitterIcon className={classes.socialIcon} fontSize="large" style={{ color: `${isDarkMode ? "white" : "black"}` }}/>
                 </a>
               </span>
               <a href="./js.docx" className={classes.social}>
@@ -72,7 +76,7 @@ const Aboutme = (props) => {
             </div>
           </Paper>
         </Paper>
-        <div className={classes.image}>
+        <div className={classes.image}  style={{ background: `${background2}`}}>
           <img
             className={classes.img}
             src="./placeholder-image.jpeg"
