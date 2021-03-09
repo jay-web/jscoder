@@ -25,9 +25,18 @@ const useStyles = makeStyles((theme) => ({
     background: "none",
     borderRadius: "10px",
     color: "inherit",
+    
   },
   pname:{
-    fontFamily: 'Sansita Swashed, cursive !important'
+    // fontFamily: 'Sansita Swashed, cursive !important'
+    fontFamily: 'Akaya Telivigala, cursive',
+    fontWeight: "bold",
+    letterSpacing: "2px"
+    
+
+  },
+  tname:{
+    fontFamily: 'Akaya Telivigala, cursive',
   },
 
   textBox: {
@@ -35,18 +44,21 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: ".1rem",
     fontSize: ".9rem",
     color: "inherit",
+    // fontFamily: 'Akaya Telivigala, cursive'
     
     
 
   },
-  techBox: {
+  summary: {
       fontWeight: "800",
       marginBottom: `${theme.spacing(2)}px`,
       paddingLeft: ".1rem",
-      fontSize: ".9rem",
+      fontSize: "1.1rem",
       color: "inherit",
-      fontFamily: 'Sansita Swashed, cursive !important'
-      
+      fontFamily: 'Akaya Telivigala, cursive'
+  },
+  tag:{
+    fontWeight: "normal"
   },
   
   avatar: {
@@ -59,6 +71,8 @@ const useStyles = makeStyles((theme) => ({
       color: "#fff",
       marginRight: ".5rem",
       fontSize: ".9rem",
+      fontFamily: 'Akaya Telivigala, cursive',
+    
       "&:hover":{
           color:"#000",
           backgroundColor: "#2979ff",
@@ -70,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#d81b60",
       color: "#fff",
       fontSize: ".9rem",
+      fontFamily: 'Akaya Telivigala, cursive',
       "&:hover":{
         color:"#000",
         backgroundColor: "#ef4873",
@@ -77,7 +92,7 @@ const useStyles = makeStyles((theme) => ({
   },
   githubButton:{
     backgroundColor: "#414849",
-   
+    fontFamily: 'Akaya Telivigala, cursive',
     fontSize: ".9rem",
     "&:hover":{
      
@@ -129,7 +144,7 @@ function ContentBox(props) {
         {name}
          </Typography>}
         subheader={
-          <Typography variant="subtitle1">
+          <Typography variant="subtitle1" className={classes.tname}>
               {title}
           </Typography>
         }
@@ -151,10 +166,10 @@ function ContentBox(props) {
                   color="textSecondary"
                   component="p"
                   gutterBottom
-                  className={classes.techBox}
+                  className={classes.summary}
                   
                 >
-                  Summary: {summary}
+                  Summary: <span className={classes.tag}>{summary}</span>
                 </Typography>
               </Grid>
 
@@ -163,10 +178,10 @@ function ContentBox(props) {
                   variant="body2"
                   color="textSecondary"
                   component="p"
-                  className={classes.techBox}
+                  className={classes.summary}
                   gutterBottom
                 >
-                  Technology: {technology}
+                  Technology: <span className={classes.tag}>{technology}</span>
                 </Typography>
               </Grid>
               <Grid item container justify="space-between">

@@ -57,7 +57,7 @@ const projects = [
         title: "Javascript Application",
         technology: "Javascript, HTML, CSS",
         imageURL: "./bitcoins.gif",
-        summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        summary: "Live Bitcoin is web app to fetch the price unit of bitcoin using the Bitcoin API. Multiple methods has been displayed to fetch the data i.e XHRHttpRequest Method of vanilla javascript, jQuery method and Fetch API.",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
@@ -74,7 +74,7 @@ const projects = [
         title: "Bootstrap Application",
         technology: "Bootstrap Framework",
         imageURL: "./looplab.gif",
-        summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        summary: "UI theme which is based on bootstrap framework. Its has completely responsive layout. Easily access on desktop, mini screens as well mobile screens",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
@@ -91,7 +91,7 @@ const projects = [
         title: "Javascript Canvas Game",
         technology: "Matter.js, HTML, CSS, Javascript",
         imageURL: "./maze.gif",
-        summary: "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        summary: "This is amazing classic maze game where we need to find the path to reach the target. Its written in native javascript and Matter.js libarary to work on HTML canvas",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
