@@ -35,8 +35,8 @@ export default  {
         alignItems: 'center'
     },
     img:{
-        width: '50%',
-        height: '50%'
+        // width: '50%',
+        height: '70%'
     },
     social:{
         textDecoration: 'none',
@@ -63,6 +63,9 @@ export default  {
     "@media screen and (max-width:700px)": {
         aboutme:{
             gridTemplateColumns: "1fr",
-        }
+        },
+        image:{
+            paddingBottom: "1rem"
+        },
     }
 }

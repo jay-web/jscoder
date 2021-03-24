@@ -5,7 +5,7 @@ const projects = [
         title: "Full Stack Application",
         technology: "Nodejs, Express, MongoDB, PUG",
         imageURL: "./holidays-2.gif",
-        summary: "This is javascript full stack server side rendered application. ExpressJS, MongoDB, JWT based authentication, PUG and other node based libarary are implemented",
+        summary: "This is javascript full stack server side rendered application. ExpressJS, MongoDB, JWT based authentication, PUG and other node based library are implemented.",
         button: {
             text: "CHECK LIVE",
             postmanText: "API WITH POSTMAN",
@@ -33,9 +33,44 @@ const projects = [
         showAPI: false,
         showCode: true
     },
-    
     {
         id: "3",
+        name: "Tracker",
+        title: "Track your workouts",
+        technology: "HTML, CSS, Native Javascript and MapBox",
+        imageURL: "./tracker.gif",
+        summary: "Tracker is the web application to note daily running or cycling workout. User can mark workout location on map and can note all duration, distance, cadence/elevation-gain based on running or cycling workout.",
+        button: {
+            text: "CHECK LIVE",
+            postmanText: "API WITH POSTMAN",
+            liveURL: "https://tracker.jscoder.in",
+            postmanURL: "",
+            githubURL: "https://github.com/jay-web/tracker"
+        },
+        showAPI: false,
+        showCode: true
+    },
+    {
+        id: "4",
+        name: "Budgety",
+        title: "Monthly Budget Keeper",
+        technology: "HTML, CSS and Native Javascript",
+        imageURL: "./budgety.gif",
+        summary: "Budgety is web application to keep record of your monthly income and expenses. We can list incomes and expenses separately in mentioned category, it will calculate the budget in amount as well as percentage. Application built in native javascript",
+        button: {
+            text: "CHECK LIVE",
+            postmanText: "API WITH POSTMAN",
+            liveURL: "https://budgety.jscoder.in/",
+            postmanURL: "",
+            githubURL: "https://github.com/jay-web/budgetApplication"
+        },
+        showAPI: false,
+        showCode: true
+    },
+ 
+    
+    {
+        id: "5",
         name: "Tasks",
         title: "React Application",
         technology: "React JS",
@@ -52,7 +87,7 @@ const projects = [
         showCode: true
     },
     {
-        id: "4",
+        id: "6",
         name: "Bitcoin tracker",
         title: "Javascript Application",
         technology: "Javascript, HTML, CSS",
@@ -69,7 +104,7 @@ const projects = [
         showCode: true
     },
     {
-        id: "5",
+        id: "7",
         name: "Single Page Theme",
         title: "Bootstrap Application",
         technology: "Bootstrap Framework",
@@ -86,7 +121,7 @@ const projects = [
         showCode: true
     },
     {
-        id: "6",
+        id: "8",
         name: "Maze Canvas",
         title: "Javascript Canvas Game",
         technology: "Matter.js, HTML, CSS, Javascript",

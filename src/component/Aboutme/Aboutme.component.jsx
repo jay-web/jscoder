@@ -37,7 +37,7 @@ const Aboutme = (props) => {
               backend nodejs server side rendered web applications.
             </p>
             <br />
-            <p>Feel free to connect me on <span style={{ fontFamily: "normal", fontWeight: "bold"}}>+919958345009</span></p>
+            <p>Feel free to connect me on <span style={{ fontFamily: "normal", fontWeight: "bold"}}>+919958345009</span> Or join me on</p>
             <div className={classes.contact}>
               <span className="socialIcons">
                 <a
@@ -79,7 +79,7 @@ const Aboutme = (props) => {
         <div className={classes.image}  style={{ background: `${background2}`}}>
           <img
             className={classes.img}
-            src="./placeholder-image.jpeg"
+            src="./about2.png"
             alt="Jay Sharma"
           />
         </div>
