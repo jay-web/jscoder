@@ -64,7 +64,7 @@ const Aboutme = (props) => {
                   <TwitterIcon className={classes.socialIcon} fontSize="large" style={{ color: `${isDarkMode ? "white" : "black"}` }}/>
                 </a>
               </span>
-              <a href="./jay-resume.pdf" className={classes.social}>
+              <a href="./jay-resume.pdf" target="blank" className={classes.social}>
                 <Button
                   variant="contained"
                   color="default"
