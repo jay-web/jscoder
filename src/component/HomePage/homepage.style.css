@@ -1,6 +1,8 @@
 .homepage{
   display: grid;
-  grid-template-columns: .9fr 1.1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: teal;
 }
 .exploreButton {
     background-color: #2979ff;
@@ -26,6 +28,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
+    background-color: rgb(220, 212, 211);
    
 
     
@@ -54,6 +57,8 @@
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    text-align: -webkit-center;
+    background-color: teal;
   }
   .titleBox{
     height: 100vh;
@@ -62,15 +67,17 @@
     z-index: 2000;
   }
   .canvasbox{
-    display: none;
+    /* display: none; */
     /* margin-top: -10rem;
     margin-left: 3rem; */
+    /* align-items: center ; */
+    width: 100%;
     
   }
 }
 @media screen and (min-width: 700px){
   .homepage{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -78,14 +85,14 @@
   }
   .titleBox{
     height: 100vh;
-    margin-top: -25rem;
+    /* margin-top: -25rem; */
     z-index: 2000;
   }
   .canvasbox{
     /* display: none; */
-    margin-top: -5rem;
-    margin-left: 3rem;
-    width: 100vw;
+    /* margin-top: -5rem; */
+    /* margin-left: 3rem; */
+    /* width: 100vw; */
     
   }
 }

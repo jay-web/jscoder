@@ -19,7 +19,8 @@ const useStyles = makeStyles({
     margin: "2rem 0rem 2rem 0rem",
   },
   root: {
-    marginBottom: "2rem",
+    marginBottom: "8rem",
+    marginTop: "2rem",
     borderRadius: "45px",
     transition: "all 800ms ease-in-out",
     "&:hover": {
@@ -42,6 +43,7 @@ const Projectpage = () => {
             justify="space-around"
             alignContent="center"
             direction={pro.id % 2 === 0 ? "row-reverse" : "row"}
+            
           >
             <Grid item xs={10} md={5} className={classes.box}>
               <ContentBox {...pro} />
@@ -54,18 +56,22 @@ const Projectpage = () => {
       );
     });
   };
+  
   useEffect(() => {
     console.log(projects);
   }, []);
+
+
+
   return (
-    <Grid container direction="column">
+    <Grid container direction="column" >
       <Navbar />
-      <Grid item container>
+      <Grid item container >
         <Grid xs={1} item />
 
         {/* Center box */}
 
-        <Grid xs={10} item container>
+        <Grid xs={10} item container >
           {renderProjects()}
         </Grid>
 

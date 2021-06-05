@@ -14,7 +14,7 @@ const CanvasBox = (props) => {
     //   <Box position={[-10, 0, -6]} />
     // </Canvas>
     <Canvas 
-        style={{height: '100vh', width: '100vw'}}
+        style={{height: '100vh'}}
         shadowMap 
         colorManagement 
         gl={{ alpha: false }} 

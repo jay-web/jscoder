@@ -37,7 +37,7 @@ function ProjectCards(props) {
  
 
   return overlay ? (
-    <div className={`overlay ${overlay && "show"}`} />
+    <div className={`overlay ${overlay && "show"}`}  />
   ) : (
    
     <div>
