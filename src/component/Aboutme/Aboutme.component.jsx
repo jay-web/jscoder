@@ -37,7 +37,7 @@ const Aboutme = (props) => {
               backend nodejs server side rendered web applications.
             </p>
             <br />
-            <p>Feel free to connect me on <span style={{ fontFamily: "normal", fontWeight: "bold"}}>+919958345009</span> Or join me on</p>
+            <p>Feel free to connect me on <span style={{ fontFamily: "normal", fontWeight: "bold"}}>+919958345009</span> Or say hi at jay.developer12@gmail.com. You may also join me on</p>
             <div className={classes.contact}>
               <span className="socialIcons">
                 <a

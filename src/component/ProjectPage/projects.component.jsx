@@ -8,7 +8,7 @@ import Navbar from "../header/navbar.component";
 import Footer from "../footer/footer.component";
 import { Grid, makeStyles, Paper } from "@material-ui/core";
 import projects from "../../projects";
-import { CardBoxTheme } from "../theme/theme.component";
+import AOS from "aos";
 
 const useStyles = makeStyles({
   content: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   root: {
     marginBottom: "8rem",
     marginTop: "2rem",
-    borderRadius: "45px",
+    borderRadius: "20px",
     transition: "all 800ms ease-in-out",
     "&:hover": {
       // transform: "scaleX(1.0134)"
@@ -36,7 +36,7 @@ const Projectpage = () => {
   const renderProjects = () => {
     return projects.map((pro) => {
       return (
-        <Paper elevation={1} key={pro.id} className={classes.root}>
+        <Paper elevation={3} key={pro.id} className={classes.root} data-aos="zoom-in" data-aos-duration="2000">
           <Grid
             item
             container
@@ -58,13 +58,14 @@ const Projectpage = () => {
   };
   
   useEffect(() => {
-    console.log(projects);
+    // console.log(projects);
+    AOS.init()
   }, []);
 
 
 
   return (
-    <Grid container direction="column" >
+    <Grid container direction="column"  >
       <Navbar />
       <Grid item container >
         <Grid xs={1} item />
