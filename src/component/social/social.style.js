@@ -67,5 +67,14 @@ export default  {
         image:{
             paddingBottom: "1rem"
         },
+        contact:{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-around",
+            alignItems: "center"
+        },
+        socialIcon:{
+            marginBottom: "1rem"
+        }
     }
 }

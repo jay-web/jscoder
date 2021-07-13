@@ -63,9 +63,14 @@ export default  {
     "@media screen and (max-width:700px)": {
         aboutme:{
             gridTemplateColumns: "1fr",
+           
         },
         image:{
             paddingBottom: "1rem"
         },
+        content:{
+            padding: "0px 1rem",
+            overflowX: "hidden"
+        }
     }
 }
