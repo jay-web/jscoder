@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 // import from './component/canvas/threeCanvas';
 import "./App.css";
 import Homepage from "./component/HomePage/homePage.component";
@@ -38,22 +38,26 @@ const theme = createMuiTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <DarkThemeMode>
-        <AnimatedSwitch
-          atEnter={{ opacity: 0 }}
-          atLeave={{ opacity: 0 }}
-          atActive={{ opacity: 1 }}
-          className="switch-wrapper"
-        >
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/projects" component={Projectpage} />
-          <Route exact path="/aboutme" component={Aboutme} />
-          <Route component={Projectpage} />
-        </AnimatedSwitch>
-      </DarkThemeMode>
-      <CssBaseline />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <DarkThemeMode>
+          <AnimatedSwitch
+            atEnter={{ opacity: 0 }}
+            atLeave={{ opacity: 0 }}
+            atActive={{ opacity: 1 }}
+            className="switch-wrapper"
+          >
+            <Switch>
+              <Route exact path="/" component={Homepage} />
+              <Route exact path="/projects" component={Projectpage} />
+              <Route exact path="/aboutme" component={Aboutme} />
+              <Route component={Projectpage} />
+            </Switch>
+          </AnimatedSwitch>
+        </DarkThemeMode>
+        <CssBaseline />
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 

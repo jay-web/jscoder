@@ -9,11 +9,13 @@ import AOS from "aos";
 
 const Homepage = () =>  {
 
+  const { isDarkMode } = useContext(ThemeContext);
+  const textColor = isDarkMode ? "#ffffff" : "rgb(19, 38, 101)";
+
   useEffect(() => {
     AOS.init();
-  }, [])
-  const { isDarkMode } = useContext(ThemeContext);
-  const textColor = isDarkMode ? "#ffffff" : "rgb(19, 38, 101)"
+  })
+
     return (
       <div className="homepage">
         <span className="canvasbox">

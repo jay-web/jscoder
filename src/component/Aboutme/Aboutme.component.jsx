@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Navbar from "../header/navbar.component";
 import { withStyles, Paper, Button } from "@material-ui/core";
 import { ThemeContext } from "../../contexts/theme.contexts";
@@ -7,6 +7,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
+import AOS from "aos";
 
 const Aboutme = (props) => {
   const { classes } = props;
@@ -14,6 +15,11 @@ const Aboutme = (props) => {
   const textColor = isDarkMode ? "#fff" : "#37474f";
   const background = isDarkMode ? "#37474f" : "#fff";
   const background2 = isDarkMode ? "#fff" : "#fff";
+
+
+  useEffect(() => {
+    AOS.init();
+  })
 
   return (
     <div className={classes.root}>
@@ -81,6 +87,7 @@ const Aboutme = (props) => {
             className={classes.img}
             src="./about2.png"
             alt="Jay Sharma"
+            data-aos="zoom-out" data-aos-duration="1000"
           />
         </div>
       </div>

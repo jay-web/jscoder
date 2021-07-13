@@ -33,10 +33,12 @@ const useStyles = makeStyles({
 
 const Projectpage = () => {
   const classes = useStyles();
+
+
   const renderProjects = () => {
     return projects.map((pro) => {
       return (
-        <Paper elevation={3} key={pro.id} className={classes.root} data-aos="zoom-in" data-aos-duration="2000">
+        <Paper elevation={3} key={pro.id} className={classes.root} data-aos="zoom-out" data-aos-duration="1000">
           <Grid
             item
             container
@@ -60,7 +62,7 @@ const Projectpage = () => {
   useEffect(() => {
     // console.log(projects);
     AOS.init()
-  }, []);
+  });
 
 
 
