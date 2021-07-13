@@ -5,12 +5,13 @@ import {Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./homepage.style.css";
 import AOS from "aos";
+import  SocialSection from "../social/social.component";
 
 
 const Homepage = () =>  {
 
   const { isDarkMode } = useContext(ThemeContext);
-  const textColor = isDarkMode ? "#ffffff" : "rgb(19, 38, 101)";
+  const textColor = isDarkMode ? "#414141" : "rgb(19, 38, 101)";
 
   useEffect(() => {
     AOS.init();
@@ -29,6 +30,7 @@ const Homepage = () =>  {
           <Link to="/projects"  data-aos="zoom-in" className="exploreButton" style={{ fontFamily: 'Akaya Telivigala, cursive', fontSize: "1rem"}}>
            Explore Projects
           </Link>
+          <SocialSection background="light" />
         </div>
       </div>
     );

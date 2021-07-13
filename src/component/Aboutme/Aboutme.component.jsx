@@ -3,11 +3,9 @@ import Navbar from "../header/navbar.component";
 import { withStyles, Paper, Button } from "@material-ui/core";
 import { ThemeContext } from "../../contexts/theme.contexts";
 import style from "../Aboutme/about.style";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
+
 import AOS from "aos";
+import SocialSection from "../social/social.component";
 
 const Aboutme = (props) => {
   const { classes } = props;
@@ -44,42 +42,8 @@ const Aboutme = (props) => {
             </p>
             <br />
             <p>Feel free to connect me on <span style={{ fontFamily: "normal", fontWeight: "bold"}}>+919958345009</span> Or say hi at jay.developer12@gmail.com. You may also join me on</p>
-            <div className={classes.contact}>
-              <span className="socialIcons">
-                <a
-                  href="https://www.linkedin.com/in/jay-sharma-developer"
-                  target="blank"
-                  className={classes.social}
-                >
-                  <LinkedInIcon  className={classes.socialIcon} fontSize="large" style={{ color: `${isDarkMode ? "white" : "black"}` }}/>
-                </a>
-
-                <a
-                  href="https://github.com/jay-web"
-                  target="blank"
-                  className={classes.social}
-                >
-                  <GitHubIcon className={classes.socialIcon} fontSize="large" style={{ color: `${isDarkMode ? "white" : "black"}` }}/>
-                </a>
-
-                <a
-                  href="https://twitter.com/jaywords7"
-                  target="blank"
-                  className={classes.social}
-                >
-                  <TwitterIcon className={classes.socialIcon} fontSize="large" style={{ color: `${isDarkMode ? "white" : "black"}` }}/>
-                </a>
-              </span>
-              <a href="./jay-resume.pdf" target="blank" className={classes.social}>
-                <Button
-                  variant="contained"
-                  color="default"
-                  startIcon={<CloudDownloadIcon />}
-                >
-                  Download Resume
-                </Button>
-              </a>
-            </div>
+            
+             <SocialSection background="dark" />
           </Paper>
         </Paper>
         <div className={classes.image}  style={{ background: `${background2}`}}>
